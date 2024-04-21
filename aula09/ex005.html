@@ -21,15 +21,34 @@
 
     <p>Aqui Vai o resultado</p>
 
-    <p>Aprendendo a usar DOM em JavaScript</p>
+    <p>Primeiro <strong>Exemplo</strong></p>
+
+    <p class="ex">Segundo Exemplo</p>
+
+    <p id= 'exemplo' >Terceiro Exemplo</p>
+
+    <p>Quarto Exemplo</p>
 
     <div>Clique em mim</div>
 
     <script>
 
-        window.document.write(window.document.URL)
+    
 
+        var p1 = window.document.getElementsByTagName('p') [3] 
+
+        window.document.write('esta escrito dessa maneira  ' + p1.innerHTML)
         
+
+        p1.style.color = "violet"
+        
+        corpo = document.body
+        corpo.style.background = 'green'
+
+         exemplo = document.getElementById('exemplo').color = 'orange'
+
+         document.querySelector('p.ex').style.color = 'gray'
+         
     </script>
 </body>
 </html>
