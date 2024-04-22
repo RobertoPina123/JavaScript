@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detran</title>
 </head>
-<body>
-    <h1>Sistema de Multas</h1>
-   Velocidade do carro <input type="number" name="velocidade" id="velocidade"> km/h 
 
-   <input type="button" value="Verificar">
+<body>
+     <!-- titulo de nivel 1  --> <h1>Multas do detran</h1>
+
+     <!-- caixa que recebe o valor  --> <input type="number" name="cxvelocidade" id="cxvelocidade">
+
+     <!-- botão que dispara a function  -->
+
+     <input type="button" value="Verificar" onclick="calcular()">
+
+     <!-- div de resultado  -->
+
+     <div id="resultado"> resultado</div>
+
+     <script>
+        // abetura da function 
+
+        function calcular() {
+
+            var cxvelocidade = document.getElementById('cxvelocidade')
+
+            res = window.document.getElementById('resultado')
+           
+            var velocidade = Number(cxvelocidade.value)
+
+            res.innerHTML = `Sua velocidade atual é ${velocidade}`
+            res.innerHTML += ` <br> Dirija com cuidado `
+            
+            if (velocidade >70)
+            {
+                res.innerHTML += ` <br> Multado Otário` 
+            }
+           
+        }
+
+
+     </script>
+
+
 </body>
 </html>

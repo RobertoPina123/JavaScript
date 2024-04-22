@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- titulo do formulário  -->
+     <h1>Exercicio em que país você vive</h1>
+
+     
+
+     <!-- caixa que pede nacionalidade  -->
+     <input type="text" name="cxpais" id="cxpais">
+
+     <!-- caixa que tem o botão que aciona a function -->
+     <input type="button" value="Verificar" onclick="clicar()">
+
+
+     <!-- Retorno da função  -->
+
+     <div id="retornofunc"></div>
+
+     <script>
+
+        function clicar() {
+
+           cxpais = document.getElementById('cxpais')
+            pais = (cxpais.value)
+ 
+         
+
+            if (pais == 'Brasil') {
+
+                retornofunc.innerHTML = ` <br> Brasileiro`
+                
+            }
+
+            else {
+
+                retornofunc.innerHTML = ' <br> Estrangeiro'
+            }
+
+           
+            
+        }
+
+
+     </script>
+</body>
+</html>
