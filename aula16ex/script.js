@@ -1,2 +1,0 @@
-prompt("")
-console.log(prompt)
